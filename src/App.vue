@@ -1,20 +1,23 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
+    <!-- Bottom Bar -->
+    <div class="phone-viewport">
+      <md-bottom-bar md-sync-route>
+        <md-bottom-bar-item to="/" md-label="Home" md-icon="home"></md-bottom-bar-item>
+        <md-bottom-bar-item to="/" md-label="Regulars" md-icon="replay"></md-bottom-bar-item>
+        <md-bottom-bar-item to="/" md-label="Status" md-icon="favorite"></md-bottom-bar-item>
+      </md-bottom-bar>
+    </div>
   </div>
 </template>
 
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
+  min-height: 100vh;
 }
 #nav {
   padding: 30px;
@@ -26,4 +29,5 @@
     }
   }
 }
+@import "@/assets/scss/app.scss";
 </style>
