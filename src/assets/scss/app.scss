@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito Sans', sans-serif !important;
 }
 
 a {
@@ -15,6 +15,12 @@ a {
   }
 }
 
+.page-title {
+  color: rgba(60,60,60,1);
+  font-size: 14px;
+  margin: 15px 0;
+}
+
 .no-padding {
   padding: 0 !important;
 }
@@ -22,7 +28,10 @@ a {
 .section-title {
   font-size: 12px;
   font-weight: 300;
-  color: rgba(0,0,0,0.5);
-  padding: 15px 15px 0 0;
-  text-transform: uppercase;
+  color: rgba(93,93,93,1);
+  padding: 15px 15px 0 15px;
+}
+
+.btn-custom {
+  background: linear-gradient(to right, rgb(152, 185, 252), rgb(211, 237, 254));
 }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="812px" viewBox="0 0 375 812" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Home</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="73.0971794%" y1="24.8267941%" x2="42.1184162%" y2="85.1347713%" id="linearGradient-1">
+            <stop stop-color="#F5FCFF" offset="0%"></stop>
+            <stop stop-color="#F5FCFF" offset="0%"></stop>
+            <stop stop-color="#E7F8FE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="68.6049932%" y1="53.4297441%" x2="62.3818968%" y2="62.7218735%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#C3EFFE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="102.717172%" y1="-5.84223738%" x2="14.3920491%" y2="90.1869645%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#B1E9FD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FBFBFB" x="0" y="0" width="375" height="812"></rect>
+        <g id="bg" transform="translate(-254.000000, -7.000000)">
+            <path d="M0.93359375,7.39256287 C84.7562066,31.9602694 132.423162,66.1556855 143.934459,109.978811 C161.201404,175.7135 99.1551399,234.752652 159.6355,288.848993 C228.389844,350.345956 243.969526,308.58664 326.287426,345.669694 C408.605327,382.752748 391.227289,525.36532 453.930524,568.543914 C515.313633,610.813445 561.891419,582.630132 614.358748,636.963623 C624.824471,647.801592 693.444773,642.25656 820.219653,620.328529 L820.219653,0 L0.93359375,7.39256287 Z" id="Path-2" fill="url(#linearGradient-1)" opacity="0.3"></path>
+            <path d="M195,6 C230.252756,19.7262112 250.746375,39.4773789 256.480855,65.253503 C265.082576,103.917689 247.528832,135.538703 277.657795,167.357383 C311.908535,203.529 328.677342,217.457959 369.684918,239.269672 C410.692494,261.081384 506.834625,282.104372 538.070938,307.501392 C568.649615,332.363715 602.335356,415.327376 628.472539,447.285544 C633.686155,453.660279 633.686155,428.187832 628.472539,370.868203 L628.472539,6 L195,6 Z" id="Path-2" fill="url(#linearGradient-2)" opacity="0.204082961"></path>
+            <path d="M254,6 C284.497396,17.7708333 302.226563,34.7083333 307.1875,56.8125 C314.628906,89.96875 299.443045,117.085168 325.507812,144.371094 C355.138357,175.389856 369.645165,187.334554 405.121094,206.039063 C440.597023,224.743571 523.770225,242.771713 550.792969,264.550781 C577.246788,285.871323 606.388548,357.016332 629,384.421875 C633.510334,389.888492 633.510334,368.044742 629,318.890625 L629,6 L254,6 Z" id="Path-2" fill="url(#linearGradient-3)" opacity="0.3"></path>
+        </g>
+        <g id="iPhone-X/Home-Indicator/Home-Indicator---On-Light" transform="translate(0.000000, 778.000000)" fill="#000000">
+            <rect id="Rectangle-24" x="121" y="20" width="134" height="5" rx="2.5"></rect>
+        </g>
+    </g>
+</svg>

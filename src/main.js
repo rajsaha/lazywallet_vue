@@ -16,15 +16,21 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 //Owl Carousel
 import carousel from 'v-owl-carousel'
 
-Vue.config.productionTip = false
+import RegularExpenses from './components/RegularExpenses.vue'
 
-Vue.use(VueMaterial)
-Vue.use(BootstrapVue)
+Vue.config.productionTip = false;
 
-Vue.component('carousel', carousel)
+Vue.use(VueMaterial);
+Vue.use(BootstrapVue);
+
+//Components
+Vue.component('regular-expenses', RegularExpenses);
+
+//Third party components
+Vue.component('carousel', carousel);
 
 new Vue({
   router,
   store,
   render: h => h(App)
-}).$mount('#app')
+}).$mount('#app');

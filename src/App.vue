@@ -6,7 +6,7 @@
       <md-bottom-bar md-sync-route>
         <md-bottom-bar-item to="/" md-label="Home" md-icon="home"></md-bottom-bar-item>
         <md-bottom-bar-item to="/" md-label="Regulars" md-icon="replay"></md-bottom-bar-item>
-        <md-bottom-bar-item to="/" md-label="Status" md-icon="favorite"></md-bottom-bar-item>
+        <md-bottom-bar-item to="/status" md-label="Status" md-icon="favorite"></md-bottom-bar-item>
       </md-bottom-bar>
     </div>
   </div>
