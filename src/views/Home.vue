@@ -37,7 +37,8 @@
                                 :style="{'background-color': 'rgba(' + expense.backgroundColor + ', 0.7)'}">
                                 <div class="icon-and-text p-ab-vc"
                                     :style="{'background-color': 'rgba(' + expense.backgroundColor + ', 1)',}">
-                                    <md-icon class="p-ab-vc" :style="{ color: expense.textColor }">{{ expense.icon }}</md-icon>
+                                    <font-awesome-icon class="p-ab-vc" :style="{ color: expense.textColor }" :icon="expense.icon" />
+                                    <!--<md-icon class="p-ab-vc" :style="{ color: expense.textColor }">{{ expense.icon }}</md-icon>-->
                                     <p class="text-center p-ab-vc">{{ expense.text }}</p>
                                 </div>
                             </div>
@@ -50,7 +51,7 @@
                     <div class="enter-amount text-center">
                         <!-- Input amount -->
                         <b-input-group>
-                            <b-form-input type="number" v-model="amount"></b-form-input>
+                            <b-form-input type="number" v-model="amount" class="custom-input" placeholder="Enter amount"></b-form-input>
                         </b-input-group>
                         <b-button class="btn btn-custom" @click="addAmount">Add</b-button>
                     </div>
@@ -72,19 +73,19 @@
                 amount: null,
                 expense_categories: [
                     {
-                        icon: 'fastfood',
+                        icon: 'utensils',
                         text: 'Food',
                         backgroundColor: '118,255,3',
                         textColor: 'rgba(0,0,0,0.8)'
                     },
                     {
-                        icon: 'directions_car',
+                        icon: 'car',
                         text: 'Transport',
                         backgroundColor: '255,209,73',
                         textColor: 'rgba(0,0,0,0.8)'
                     },
                     {
-                        icon: 'shopping_cart',
+                        icon: 'shopping-cart',
                         text: 'Grocery',
                         backgroundColor: '128,214,255',
                         textColor: 'rgba(0,0,0,0.8)'
@@ -141,10 +142,7 @@
 
     .phone-viewport {
         width: 100%;
-        display: inline-flex;
-        align-items: flex-end;
         overflow: hidden;
-        border: 1px solid rgba(#000, .26);
         position: fixed;
         bottom: 0;
         left: 0;
@@ -186,7 +184,7 @@
                 width: 60px;
                 height: 60px;
 
-                i {
+                svg {
                     top: 40%;
                     color: white !important;
                 }
@@ -204,7 +202,7 @@
         .input-group {
             margin-bottom: 15px;
             input {
-                border-radius: 25px;
+                border-radius: 5px;
             }
         }
 

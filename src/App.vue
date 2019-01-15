@@ -3,11 +3,12 @@
     <router-view/>
     <!-- Bottom Bar -->
     <div class="phone-viewport">
-      <md-bottom-bar md-sync-route>
-        <md-bottom-bar-item to="/" md-label="Home" md-icon="home"></md-bottom-bar-item>
-        <md-bottom-bar-item to="/" md-label="Regulars" md-icon="replay"></md-bottom-bar-item>
-        <md-bottom-bar-item to="/status" md-label="Status" md-icon="favorite"></md-bottom-bar-item>
-      </md-bottom-bar>
+      <!--<md-bottom-bar md-sync-route>-->
+        <!--<md-bottom-bar-item to="/" md-label="Home" md-icon="home"></md-bottom-bar-item>-->
+        <!--<md-bottom-bar-item to="/" md-label="Regulars" md-icon="replay"></md-bottom-bar-item>-->
+        <!--<md-bottom-bar-item to="/status" md-label="Status" md-icon="favorite"></md-bottom-bar-item>-->
+      <!--</md-bottom-bar>-->
+      <bottom-bar></bottom-bar>
     </div>
   </div>
 </template>

@@ -56,6 +56,7 @@
                 text-align: center;
 
                 h6 {
+                    font-family: 'Nunito', sans-serif;
                     font-size: 12px;
                 }
 
