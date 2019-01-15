@@ -38,11 +38,9 @@ a {
 
 .custom-input {
   display: block;
-  width: 190px !important;
+  width: 260px !important;
   margin-left: auto;
   margin-right: auto;
-}
-
-::placeholder {
-  font-family: 'Nunito Sans', sans-serif !important;
+  border: 1px solid rgba(0,0,0,0.05) !important;
+  font-size: 0.9em !important;
 }

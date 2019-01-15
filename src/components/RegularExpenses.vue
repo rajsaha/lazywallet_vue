@@ -22,7 +22,7 @@
                     <p>RM {{ expense.amount }}</p>
                 </div>
             </div>
-            <md-button><md-icon>add</md-icon></md-button>
+            <md-button><font-awesome-icon icon="plus" /></md-button>
         </carousel>
     </div>
 </template>

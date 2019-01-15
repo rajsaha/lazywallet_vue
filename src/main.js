@@ -12,7 +12,8 @@ import {
   faChartBar,
   faUtensils,
   faCar,
-  faShoppingCart
+  faShoppingCart,
+  faPlus
   } from '@fortawesome/free-solid-svg-icons'
 
 //Vue Material
@@ -49,6 +50,7 @@ library.add(faChartBar);
 library.add(faUtensils);
 library.add(faCar);
 library.add(faShoppingCart);
+library.add(faPlus);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 new Vue({
