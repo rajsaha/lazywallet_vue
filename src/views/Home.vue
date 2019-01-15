@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="row no-padding">
-
+                <expense-categories :data="expense_categories"></expense-categories>
             </div>
             <div class="row">
                 <div class="col">
@@ -33,8 +33,8 @@
 
 <script>
     // @ is an alias to /src
-    import JQuery from 'jquery'
-    let $ = JQuery
+    import JQuery from 'jquery';
+    let $ = JQuery;
 
     export default {
         name: 'home',

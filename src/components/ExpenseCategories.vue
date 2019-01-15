@@ -10,7 +10,7 @@
                 :autoWidth="true"
                 :autoHeight="true">
             <div class="category-parent"
-                 v-for="(expense, index) in expense_categories"
+                 v-for="(expense, index) in data"
                  :key="index"
                  :style="{
               'background-color': 'rgba(' + expense.backgroundColor + ', 0.5)',
@@ -33,7 +33,9 @@
 <script>
     export default {
         name: "ExpenseCategories",
-        props: ['data']
+        props: {
+            data: null
+        }
     }
 </script>
 

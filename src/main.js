@@ -28,8 +28,10 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 //Owl Carousel
 import carousel from 'v-owl-carousel'
 
-import RegularExpenses from './components/RegularExpenses.vue'
-import BottomBar from './components/BottomBar.vue'
+//Components
+import RegularExpenses from './components/RegularExpenses.vue';
+import ExpenseCategories from './components/ExpenseCategories.vue';
+import BottomBar from './components/BottomBar.vue';
 
 Vue.config.productionTip = false;
 
@@ -39,6 +41,7 @@ Vue.use(BootstrapVue);
 //Components
 Vue.component('regular-expenses', RegularExpenses);
 Vue.component('bottom-bar', BottomBar);
+Vue.component('expense-categories', ExpenseCategories);
 
 //Third party components
 Vue.component('carousel', carousel);
