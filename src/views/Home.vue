@@ -101,6 +101,8 @@
 <style lang="scss">
     body {
         background-image: url("../assets/homebg.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .p-ab-vc {

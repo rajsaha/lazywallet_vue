@@ -59,13 +59,13 @@
 
     .category-parent {
         border-radius: 50%;
-        width: 100px;
-        height: 100px;
+        width: 6em;
+        height: 6em;
         margin-bottom: 15px;
 
         .expense-category {
-            width: 80px;
-            height: 80px;
+            width: 5em;
+            height: 5em;
             border-radius: 50%;
             text-align: center;
             position: relative;
@@ -73,8 +73,8 @@
 
             .icon-and-text {
                 border-radius: 50%;
-                width: 60px;
-                height: 60px;
+                width: 4em;
+                height: 4em;
 
                 svg {
                     top: 40%;
@@ -85,6 +85,58 @@
                     font-size: 9px;
                     top: 70%;
                     color: white;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 375px) {
+        .category-parent {
+            width:9em;
+            height: 9em;
+
+            .expense-category {
+                width: 8em;
+                height: 8em;
+
+                .icon-and-text {
+                    width: 7em;
+                    height: 7em;
+
+                    svg {
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-height: 800px) {
+        .category-parent {
+            width:10em;
+            height: 10em;
+
+            .expense-category {
+                width: 9em;
+                height: 9em;
+
+                .icon-and-text {
+                    width: 8em;
+                    height: 8em;
+
+                    svg {
+                        width: 35px;
+                        height: 35px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                    }
                 }
             }
         }

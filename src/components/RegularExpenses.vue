@@ -22,7 +22,6 @@
                     <p>RM {{ expense.amount }}</p>
                 </div>
             </div>
-            <md-button><font-awesome-icon icon="plus" /></md-button>
         </carousel>
     </div>
 </template>
@@ -64,6 +63,27 @@
                     font-size: 9px;
                     color: rgba(173, 173, 173, 1);
                     margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 375px) {
+        .regular-expenses-carousel {
+
+            .regular-expense {
+                width: 100px;
+                height: 100px;
+
+                .content {
+
+                    h6 {
+                        font-size: 15px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                    }
                 }
             }
         }
