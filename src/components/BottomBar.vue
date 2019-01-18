@@ -1,20 +1,26 @@
 <template>
-    <div class="bottom-bar-container">
+    <div class="bottom-bar-container text-center">
         <div class="row">
             <div class="col">
-                <div class="text-center bottom-bar-link active-link">
-                    <font-awesome-icon icon="home" />
-                </div>
+                <router-link :to="{name: 'home'}">
+                    <div class="bottom-bar-link">
+                        <font-awesome-icon icon="home" />
+                    </div>
+                </router-link>
             </div>
             <div class="col">
-                <div class="text-center bottom-bar-link">
-                    <font-awesome-icon icon="redo" />
-                </div>
+                <router-link :to="{name: 'about'}">
+                    <div class="bottom-bar-link">
+                        <font-awesome-icon icon="redo" />
+                    </div>
+                </router-link>
             </div>
             <div class="col">
-                <div class="text-center bottom-bar-link">
-                    <font-awesome-icon icon="chart-bar" />
-                </div>
+                <router-link :to="{name: 'status'}">
+                    <div class="bottom-bar-link">
+                        <font-awesome-icon icon="chart-bar" />
+                    </div>
+                </router-link>
             </div>
         </div>
     </div>
@@ -27,16 +33,19 @@
 </script>
 
 <style scoped lang="scss">
+    a {
+        color: inherit;
+    }
     .bottom-bar-container {
         padding: 25px;
         .bottom-bar-link {
+            transition: all 0.2s ease-in-out;
             border-radius: 50%;
             width: 50px;
             height: 50px;
+            position: relative;
             margin-left: auto;
             margin-right: auto;
-            position: relative;
-
             svg {
                 position: absolute;
                 top: 50%;
@@ -45,10 +54,11 @@
             }
         }
 
-        .active-link  {
-            /*border: 1px solid rgba(0,0,0,0.1);*/
-            box-shadow: 0px 10px 25px -10px rgb(152, 185, 252);
-            color: rgb(165, 229, 220) !important;
+        .router-link-active  {
+            .bottom-bar-link {
+                box-shadow: 0 10px 25px -10px rgb(152, 185, 252);
+                color: rgb(165, 229, 220) !important;
+            }
         }
     }
 </style>
