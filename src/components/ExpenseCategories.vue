@@ -52,8 +52,8 @@
             transition: all 0.2s ease-in-out;
         }
 
-        .owl-item.active.center {
-            transform: scale(1.3);
+        .owl-item.active.center .category-parent {
+            transform: scale(1.2);
         }
     }
 
@@ -61,7 +61,9 @@
         border-radius: 50%;
         width: 6em;
         height: 6em;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        transition: all 0.2s ease-in-out;
 
         .expense-category {
             width: 5em;
@@ -69,7 +71,6 @@
             border-radius: 50%;
             text-align: center;
             position: relative;
-            transition: all 0.2s ease-in-out;
 
             .icon-and-text {
                 border-radius: 50%;

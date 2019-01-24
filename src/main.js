@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './registerServiceWorker'
+import Ripple from 'vue-ripple-directive'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -45,6 +46,9 @@ Vue.component('expense-categories', ExpenseCategories);
 
 //Third party components
 Vue.component('carousel', carousel);
+
+//Vue directives
+Vue.directive('ripple', Ripple);
 
 //Fontawesome icons
 library.add(faHome);
