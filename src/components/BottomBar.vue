@@ -9,7 +9,7 @@
                 </router-link>
             </div>
             <div class="col">
-                <router-link :to="{name: 'about'}">
+                <router-link :to="{name: 'regulars'}">
                     <div class="bottom-bar-link">
                         <font-awesome-icon icon="redo" />
                     </div>

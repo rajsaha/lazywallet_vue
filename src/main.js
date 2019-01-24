@@ -14,7 +14,9 @@ import {
   faUtensils,
   faCar,
   faShoppingCart,
-  faPlus
+  faPlus,
+  faChevronDown,
+  faSearch
   } from '@fortawesome/free-solid-svg-icons'
 
 //Vue Material
@@ -31,6 +33,7 @@ import carousel from 'v-owl-carousel'
 
 //Components
 import RegularExpenses from './components/RegularExpenses.vue';
+import SearchRegularExpenses from './components/SearchRegularExpenses.vue';
 import ExpenseCategories from './components/ExpenseCategories.vue';
 import BottomBar from './components/BottomBar.vue';
 
@@ -41,6 +44,7 @@ Vue.use(BootstrapVue);
 
 //Components
 Vue.component('regular-expenses', RegularExpenses);
+Vue.component('search-regular-expenses', SearchRegularExpenses);
 Vue.component('bottom-bar', BottomBar);
 Vue.component('expense-categories', ExpenseCategories);
 
@@ -58,6 +62,8 @@ library.add(faUtensils);
 library.add(faCar);
 library.add(faShoppingCart);
 library.add(faPlus);
+library.add(faChevronDown);
+library.add(faSearch);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 new Vue({

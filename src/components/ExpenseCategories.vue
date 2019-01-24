@@ -27,6 +27,10 @@
                 </div>
             </div>
         </carousel>
+
+        <div class="text-center">
+            <font-awesome-icon icon="chevron-down" style="color: rgba(0,0,0,0.1);"/>
+        </div>
     </div>
 </template>
 
@@ -41,7 +45,7 @@
 
 <style scoped lang="scss">
     .expense-category-carousel {
-        margin-bottom: 25px;
+        margin-bottom: 15px;
 
         .owl-stage-outer {
             padding-top: 25px;
@@ -61,8 +65,8 @@
         border-radius: 50%;
         width: 6em;
         height: 6em;
-        margin-bottom: 25px;
-        margin-top: 25px;
+        margin-top: 15px;
+        margin-bottom: 10px;
         transition: all 0.2s ease-in-out;
 
         .expense-category {
@@ -95,6 +99,7 @@
         .category-parent {
             width:9em;
             height: 9em;
+            margin-bottom: 20px;
 
             .expense-category {
                 width: 8em;
@@ -110,7 +115,7 @@
                     }
 
                     p {
-                        font-size: 15px;
+                        font-size: 12px;
                     }
                 }
             }
@@ -133,10 +138,6 @@
                     svg {
                         width: 35px;
                         height: 35px;
-                    }
-
-                    p {
-                        font-size: 18px;
                     }
                 }
             }

@@ -23,7 +23,7 @@
                     <div class="enter-amount text-center">
                         <!-- Input amount -->
                         <b-form-input type="number" v-model="amount" class="custom-input mb-3" placeholder="Enter amount"></b-form-input>
-                        <b-button class="btn btn-custom" @click="addAmount">Add Expense</b-button>
+                        <b-button v-ripple class="btn btn-custom" @click="addAmount">Add Expense</b-button>
                     </div>
                 </div>
             </div>
