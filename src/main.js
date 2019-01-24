@@ -50,6 +50,7 @@ Vue.component('expense-categories', ExpenseCategories);
 
 //Third party components
 Vue.component('carousel', carousel);
+Vue.use(require('vue-moment'));
 
 //Vue directives
 Vue.directive('ripple', Ripple);

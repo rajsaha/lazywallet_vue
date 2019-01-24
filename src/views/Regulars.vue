@@ -54,6 +54,12 @@ export default {
                         amount: 6,
                         backgroundColor: '117, 117, 117',
                         textColor: '#FFFFFF'
+                    },
+                    {
+                        text: 'Movie',
+                        amount: 36,
+                        backgroundColor: '117, 117, 117',
+                        textColor: '#FFFFFF'
                     }
                 ],
       }
