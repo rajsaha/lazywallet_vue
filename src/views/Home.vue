@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="row no-padding">
-                <expense-categories :data="expense_categories"></expense-categories>
+                <expense-categories :data="expense_categories" :amount="amount" :animation="add_expense_animation_occuring"></expense-categories>
             </div>
             <div class="row">
                 <div class="col">
@@ -32,10 +32,6 @@
 </template>
 
 <script>
-    // @ is an alias to /src
-    import JQuery from 'jquery';
-    let $ = JQuery;
-
     export default {
         name: 'home',
         data() {
@@ -88,11 +84,16 @@
                         textColor: '#FFFFFF'
                     }
                 ],
+                add_expense_animation_occuring: false
             }
         },
         methods: {
             addAmount() {
-                this.$store.dispatch('add_to_total_expense', this.amount)
+                this.$store.dispatch('add_to_total_expense', this.amount);
+                this.add_expense_animation_occuring = true;
+                setTimeout(() => {
+                    this.add_expense_animation_occuring = false;
+                }, 1500);
             }
         }
     }

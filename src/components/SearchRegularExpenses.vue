@@ -9,7 +9,7 @@
         </div>
       </b-input-group>
     </div>
-    <carousel
+    <!-- <carousel
       class="regular-expenses-carousel"
       :items="3"
       :nav="false"
@@ -18,7 +18,6 @@
       :center="true"
       :autoWidth="true"
     >
-      <!-- Carousel Start -->
       <div
         class="regular-expense"
         v-ripple="'rgba(' + expense.backgroundColor + ', 0.2)'"
@@ -31,13 +30,31 @@
                    'box-shadow': '0 11 12 -12 rgba(' + expense.backgroundColor + ', 0.2)'
                    }"
       >
-        <!-- Carousel Item -->
         <div class="content">
           <h6>{{ expense.text }}</h6>
           <p>RM {{ expense.amount }}</p>
         </div>
       </div>
-    </carousel>
+    </carousel> -->
+    <div class="regular-expenses-list">
+      <div
+        class="regular-expense"
+        v-ripple="'rgba(' + expense.backgroundColor + ', 0.2)'"
+        v-for="(expense, index) in data"
+        :key="index"
+        @click="addAmount(expense.amount)"
+        :style="{
+                   'border-top-color': 'rgb(' + expense.backgroundColor + ')',
+                   'border-radius': '5px',
+                   'box-shadow': '0 11 12 -12 rgba(' + expense.backgroundColor + ', 0.2)'
+                   }"
+      >
+        <div class="content">
+          <h6>{{ expense.text }}</h6>
+          <p>RM {{ expense.amount }}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -51,7 +68,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.regular-expenses-carousel {
+.regular-expenses-list {
+  width: 100%;
+  height: 250px;
+  text-align: center;
+
   .regular-expense {
     margin-bottom: 5px;
     width: 75px;
@@ -60,6 +81,8 @@ export default {
     border-top: 3px solid;
     box-shadow: 0 5px 10px rgba(117, 117, 117, 0.1);
     background-color: white;
+    display: inline-block;
+    margin-right: 10px;
 
     .content {
       position: absolute;
