@@ -35,15 +35,15 @@
             <p class="text-center p-ab-vc">{{ expense.text }}</p>
           </div>
         </div>
+      </div>
 
-        <transition name="bubble">
+      <transition name="bubble">
           <div
             :style="{ borderColor: expense.backgroundColor }"
             class="add-expense-ui-response shadow"
             v-if="animation"
           >{{ amount }}</div>
         </transition>
-      </div>
     </carousel>
 
     <div class="text-center">
